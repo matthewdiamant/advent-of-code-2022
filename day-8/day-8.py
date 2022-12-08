@@ -8,11 +8,11 @@ def south_trees(x, y, trees): return [tree_line[x] for tree_line in trees[y + 1:
 def is_visible(tree, candidates):
     return not any([candidate >= tree for candidate in candidates])
 
-def scenic_score(tree, trees):
+def scenic_score(tree, candidates):
     score = 0
-    for t in trees:
+    for candidate in candidates:
         score += 1
-        if t >= tree:
+        if candidate >= tree:
             return score
     return score
 
