@@ -1,0 +1,7 @@
+[package]
+name = 'day-15'
+version = '1.0.0'
+
+[[bin]]
+name = 'day-15'
+path = './day-15.rs'
